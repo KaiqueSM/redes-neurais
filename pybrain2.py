@@ -34,7 +34,7 @@ training = BackpropTrainer(
 
 trainingTime = 30000
 
-for i in range(1, trainingTime):
+for i in range(0, trainingTime):
     error = training.train()
     if i % 1000 == 0:
         print("Error: ", error)
